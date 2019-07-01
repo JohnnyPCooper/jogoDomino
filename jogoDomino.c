@@ -50,7 +50,7 @@ int main() //Funcao principal
 
 void menu(){
     setlocale(LC_ALL, "Portuguese");
-    system("clear");
+    system("cls");
     system("color 01");
     printf("\n********************************************************************************************************");
     printf("\n*DDDDDDDDDDDDDDDDDOOOOOOOOOOOOOOOOOMMMMMMMMMMMMMMMMMIIIIIIIIIIIIIIIIINNNNNNNNNNNNNNNNNOOOOOOOOOOOOOOOOO*");
@@ -87,7 +87,7 @@ void menu(){
 //__________________________________________________________________________________________________________________________//
 
  void regras(){
-     system("clear");
+     system("cls");
      setlocale(LC_ALL, "Portuguese");
      system("color 01");
     printf("\n********************************************************************************************************");
@@ -118,7 +118,7 @@ void menu(){
 //__________________________________________________________________________________________________________________________//
 
 void adeus(){
-    system("clear");
+    system("cls");
     system("color FD");
     printf("\n\n");
     printf("      Segundo Lavoisier, Na natureza nada se cria, nada se perde, tudo se transforma.");
@@ -166,7 +166,7 @@ void quatro_jogadores()
         int outroai[4]; // Tive que criar essa variável inútil para resolver um problema.
     };
     struct perfil_jogador jogador;
-    system("clear");
+    system("cls");
     //int score[3] = {0};
     int contador, pontuacao, fim[5] = {0, 0, 0, 0, 0};
     *pecas_jogo = malloc(6*sizeof(char));
@@ -179,7 +179,7 @@ void quatro_jogadores()
         printf("Meu apelido e -> ");
         scanf("%s", jogador.nomes[contador]);
     }
-    system("clear");
+    system("cls");
     int inventario[5][7], aux_inventario[28];
     int cont1, cabo = 0;
     bool turno = false;
@@ -204,7 +204,7 @@ void quatro_jogadores()
     {
         for(int cont1 = 1; cont1 < 5; cont1++)
         {
-            system("clear");
+            system("cls");
             printf("                    | Turno do: %s | N Turno: %d \n", jogador.nomes[cont1], qtd_turnos+1);
             printf("\n                    Mesa do jogo:\n");
             printf("________________________________________________________________________________________________________________________\n\n");
@@ -304,7 +304,7 @@ void quatro_jogadores()
 //__________________________________________________________________________________________________________________________//
 
 void parabains(char vencedor[]){
-    system("clear");
+    system("cls");
     printf("Meus parabains jogador %s!!!", vencedor);
 }
 
