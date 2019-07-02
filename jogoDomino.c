@@ -36,7 +36,7 @@ void quatro_jogadores(); // Funcao para jogar em 4 jogadores
 
 int main() //Funcao principal
 {
-    parabains();
+    menu();
     return 0;
 }
 
