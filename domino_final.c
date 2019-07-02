@@ -178,7 +178,7 @@ void quatro_jogadores()
     //Função para jogar em 4 jogadores
 
     struct perfil_jogador jogador;
-    jogador.arm[0] = 28;
+    jogador.arm[0] = 27;
 
     system("cls");
     *pecas_jogo = malloc(6*sizeof(char));
