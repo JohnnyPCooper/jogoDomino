@@ -187,6 +187,10 @@ void quatro_jogadores()
     int aux_inventario[28], aux_peca, aux_66 = 0; //auxiliadores
     int peca_mesa = 1; // variaveis de peças
     int i, j, k=0, terminar_jogo = 0; // utilidades
+    int terminar_jogo1 = 0;
+    int terminar_jogo2 = 0;
+    int terminar_jogo3 = 0;
+    int terminar_jogo4 = 0;
 
     bool turno = false, fim_de_jogo = true, aux_x = true;; // booleanos para parada e execução
 
@@ -320,7 +324,7 @@ void quatro_jogadores()
 
             //Condição de existência
 
-            while(inventario[cont1][peca_chave] == 29 || peca_chave > 8 || peca_chave < 0)
+            while(inventario[cont1][peca_chave] == 29 || peca_chave >= 9 || peca_chave < 0)
             {
               printf("\n                    Slot inválido! No slot escolhido, nao há peça alguma. Por favor, insira outro número. \n                    > ");
               scanf("%d", &peca_chave);
@@ -338,7 +342,7 @@ void quatro_jogadores()
         if(peca_chave == 8){
                 printf("\n                    Escolha uma peca para inverter:  ");
                 scanf("%d", &aux_peca);
-                while(inventario[cont1][aux_peca] == 29 || peca_chave > 8 || peca_chave < 0){
+                while(inventario[cont1][aux_peca] == 29 || peca_chave >= 9 || peca_chave < 0){
                     printf("\n                    Slot inválido! No slot escolhido, nao há peça alguma. Por favor, insira outro número. \n                    > ");
                     scanf("%d", &aux_peca);}
                 strcpy(mesa[peca_mesa], inverte[inventario[cont1][aux_peca]]);
@@ -357,7 +361,7 @@ void quatro_jogadores()
 
 
         else
-            if(peca_chave >= 0 && peca_chave < 7){
+            if(peca_chave >= 0 && peca_chave < 9){
 
             if(jogador.arm[temp-1] == 1){
                 while(inventario[cont1][peca_chave] != 2 && inventario[cont1][peca_chave] != 3 &&
@@ -737,5 +741,3 @@ void parabains(char pessoa[]){
         }
 }
 //__________________________________________________________________________________________________________________________//
-
-
