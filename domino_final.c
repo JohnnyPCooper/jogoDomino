@@ -1,3 +1,5 @@
+// Autores: João Pedro Portilho Silva; Lucas Elias de Andrade Cruvinel; Ramon Soares Mendes de Meneses Leite.
+// Emails: jppsil14@gmail.com; lucrilhasbr@hotmail.com; ramnsores1000@gmail.com;
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
