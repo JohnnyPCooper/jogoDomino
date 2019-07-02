@@ -171,7 +171,7 @@ void quatro_jogadores()
     //int score[3] = {0};
     int contador, pontuacao, fim[5] = {0, 0, 0, 0, 0};
     *pecas_jogo = malloc(6*sizeof(char));
-    char mesa[50][6] = {0};
+    char mesa[150][6] = {0};
       //  printf("%c%c%c%c%c \n", mesa[1][0],mesa[1][1],mesa[1][2],mesa[1][3],mesa[1][4]);
     //printf("%s", mesa+1);
     for(contador = 1; contador < 5; contador++)
@@ -211,7 +211,12 @@ void quatro_jogadores()
             printf("                    | Turno do: %s | N Turno: %d \n", jogador.nomes[cont1], qtd_turnos+1);
             printf("\n                    Mesa do jogo:\n");
             printf("________________________________________________________________________________________________________________________\n\n");
-            printf("%s", mesa[1]);
+            int contador_aleatorio;
+            for(contador_aleatorio = 1; contador_aleatorio < 151; contador_aleatorio++)
+            {
+                printf("%s", mesa[contador_aleatorio]);
+            }
+            /*printf("%s", mesa[1]);
             printf("%s", mesa[2]);
             printf("%s", mesa[3]);
             printf("%s", mesa[4]);
@@ -240,7 +245,18 @@ void quatro_jogadores()
             printf("%s", mesa[26]);
             printf("%s", mesa[27]);
             printf("%s", mesa[28]);
-
+            printf("%s", mesa[29]);
+            printf("%s", mesa[30]);
+            printf("%s", mesa[31]);
+            printf("%s", mesa[32]);
+            printf("%s", mesa[33]);
+            printf("%s", mesa[34]);
+            printf("%s", mesa[35]);
+            printf("%s", mesa[36]);
+            printf("%s", mesa[37]);
+            printf("%s", mesa[38]);
+            printf("%s", mesa[39]);
+            printf("%s", mesa[40]); */
            // break;
             printf("\n________________________________________________________________________________________________________________________\n\n");
             printf("                    Meu inventario:\n\n");
