@@ -178,7 +178,7 @@ void quatro_jogadores()
     //Função para jogar em 4 jogadores
 
     struct perfil_jogador jogador;
-    jogador.arm[0] = 27;
+    jogador.arm[0] = 28;
 
     system("cls");
     *pecas_jogo = malloc(6*sizeof(char));
@@ -310,7 +310,6 @@ void quatro_jogadores()
                     printf("                    {0. %s}, {1. %s}, {2. %s}, {3. %s}, {4. %s}, {5. %s}, {6. %s}", pecas_jogo[inventario[cont1][0]], pecas_jogo[inventario[cont1][1]], pecas_jogo[inventario[cont1][2]], pecas_jogo[inventario[cont1][3]], pecas_jogo[inventario[cont1][4]], pecas_jogo[inventario[cont1][5]], pecas_jogo[inventario[cont1][6]]);
                     printf("\n\n                    OBS: Para pular seu turno, digite 7; ");
                     printf("\n                    OBS: Para colocar uma peca invertida, digite 8 e em seguida escolha a peca; ");
-                    printf("\n                    OBS: Se empate aperte  F; ");
                     printf("\n                    Qual peca deseja colocar?\n                    > ");
                 }
                 else
@@ -728,7 +727,7 @@ void parabains(char pessoa[]){
     printf("\n*      Você É o mais INTELIGENTE e o mais PIK@ CARALH$.                                                *");
     printf("\n*                                                                                                      *");
     printf("\n********************************************************************************************************");
-    printf("                                                   Jogador Vencedor: %s", pessoa);
+    printf("\n                   Jogador Vencedor: %s", pessoa);
     printf("\n********************************************************************************************************");
     printf("\n*                                                                                                      *");
     printf("\n*                                  Pressione 1 para voltar ao menu.                                    *");
