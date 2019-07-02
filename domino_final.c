@@ -310,6 +310,7 @@ void quatro_jogadores()
                     printf("                    {0. %s}, {1. %s}, {2. %s}, {3. %s}, {4. %s}, {5. %s}, {6. %s}", pecas_jogo[inventario[cont1][0]], pecas_jogo[inventario[cont1][1]], pecas_jogo[inventario[cont1][2]], pecas_jogo[inventario[cont1][3]], pecas_jogo[inventario[cont1][4]], pecas_jogo[inventario[cont1][5]], pecas_jogo[inventario[cont1][6]]);
                     printf("\n\n                    OBS: Para pular seu turno, digite 7; ");
                     printf("\n                    OBS: Para colocar uma peca invertida, digite 8 e em seguida escolha a peca; ");
+                    printf("\n                    OBS: Se empate aperte  F; ");
                     printf("\n                    Qual peca deseja colocar?\n                    > ");
                 }
                 else
@@ -678,7 +679,9 @@ void quatro_jogadores()
 
 //___________________________________________________________________________________________________
 
-            peca_mesa++; //Mudar posição da mesa
+
+            if(turno == false){
+                peca_mesa++; }//Mudar posição da mesa
 
             //Mudar turno se o jogador passar a vez (auxiliar)
 
